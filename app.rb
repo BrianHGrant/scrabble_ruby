@@ -11,11 +11,16 @@ end
 get('/score') do
   @word = params.fetch('word')
   @verified_word = params.fetch('word').english_verify?()
-  if @verified_word == true
-    @score = params.fetch('word').scrabble_score()
-    erb(:score)
-  else
-    @message = "Your word: " + @word + " is not in the English language"
+  if @word == ""
+    @message = "Please enter a word."
     erb(:index)
+  else
+    if @verified_word == true
+      @score = params.fetch('word').scrabble_score()
+      erb(:score)
+    else
+      @message = "Your word: " + @word + " is not in the English language"
+      erb(:index)
+    end
   end
 end

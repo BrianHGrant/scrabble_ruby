@@ -1,2 +1,11 @@
-<h1>Your Score:</h1>
-<h2><%= @score %></h2>
+<div id="result-box">
+  <h2>Your Word:</h2>
+  <h3><%= @word %></h3>
+  <h2>Your Score:</h2>
+  <h3><%= @score %></h3>
+  <div class="row" id="reset_button">
+    <form action="/">
+      <button type="click" class="btn btn-primary" id="reset">Try Again!</button>
+    </form>
+  </div>
+</div>

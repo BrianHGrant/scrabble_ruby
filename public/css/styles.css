@@ -1,5 +1,54 @@
 body {
   background-image: url('/img/words_background.jpg');
-  background-repeat:space;
+  /*background-repeat: no-repeat;*/
   background-size: cover;
+  background-color: #D8C781;
+}
+
+h1 {
+  text-align: center;
+  color: #CE730F;
+  font-size: 4em;
+  font-weight: bold;
+}
+label {
+  color: #332415;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+#word_form {
+  padding: 2em;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+#input-area {
+  margin-top: 1em;
+  border: 2px double rgb(119,17,0);
+  text-align: center;
+  color: rgb(119,17,0);
+  background-color: rgba(255,255,255, 0.7);
+  padding: 0.5em 1em 1.5em 1em;
+}
+
+#calculate-button {
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+#error {
+  text-align: center;
+  color: rgb(119,17,0);
+}
+
+#result-box {
+  margin-top: 1em;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 2px double rgb(119,17,0);
+  text-align: center;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 0.5em 1em 1.5em 1em;
 }
