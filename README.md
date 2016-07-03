@@ -5,7 +5,7 @@
 The user will enter a single word. The program verifies that this word is in the english language and provides a score if it is valid.
 #### Run
 
-Click here to view app deployed on <a href="https://word-count-supreme.herokuapp.com/">Heroku</a>
+Click here to view app deployed on <a href="https://scrabble-score-calculator.herokuapp.com/">Heroku</a>
 
 ##### Licence
 
