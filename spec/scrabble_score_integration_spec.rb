@@ -10,4 +10,10 @@ describe('the scrabble score path', {:type => :feature}) do
     click_button('Calculate')
     expect(page).to have_content(24)
   end
+  it('processes the user entry and returns an error message for a non-english word') do
+    visit('/')
+    fill_in('word', :with => 'xylo')
+    click_button('Calculate')
+    expect(page).to have_content("is not in the English language")
+  end
 end
